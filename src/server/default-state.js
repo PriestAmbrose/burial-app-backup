@@ -1,6 +1,6 @@
 import md5 from 'md5';
 export const defaultState = {
-    users: [{
+    userInfo: [{
         id: "U1",
         name: "Dev",
         passwordHash:md5("TUPLES")
@@ -9,42 +9,28 @@ export const defaultState = {
         name: "CEO",
         passwordHash:md5("PROFITING")
     }],
-    groups: [{
-        name: "To Do",
-        id: "G1",
-        owner: "U1"
-    },{
-        name: "Doing",
-        id: "G2",
-        owner: "U1"
-    },{
-        name: "Done",
-        id: "G3",
-        owner: "U1"
+    obituaries: [{
+        userId : "U1",
+        name: "Joan Doe",
+        birthDate: "April 23th 1945",
+        deathDate: "May 14th 2020",
+        funeralHome: "Otway",
+        coronaCase: true,
+        life: "She was sooo niec!....etc."
+    },{       
+        userId : "U1",
+        name: "Jane Doe",
+        birthDate: "April 2th 1945",
+        deathDate: "May 1th 2020",
+        funeralHome: "Otway",
+        coronaCase: true,
+        life: "She was sooo nice, too!....etc."
+        
     }],
-    tasks : [{
-        name: "Do tests",
-        id: "T1",
-        group: "G1",
-        owner: "U1",
-        isComplete: false
-    },{
-        name: "Doing tests",
-        id: "T2",
-        group: "G2",
-        owner: "U1",
-        isComplete: false
-    },{
-        name: "Tests done",
-        id: "T3",
-        group: "G3",
-        owner: "U1",
-        isComplete: true
-    }],
-    comments: [{
-        owner: "U1",
-        id: "C1",
-        task: "T1",
-        content: "Great work!!!"
+    funeralArrangements: [{
+        userId :"U1",
+        deceasedName: "Jane Doe",
+        funeralHome: "Lauqua",
+        status: "closed"
     }]
 }
