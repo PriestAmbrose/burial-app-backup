@@ -30,7 +30,7 @@ export const defaultState = {
     funeralArrangements: [{
         userId :"U1",
         deceasedName: "Jane Doe",
-        funeralHome: "Lauqua",
+        funeralHome: "Laqua",
         status: "closed"
     }]
 }
