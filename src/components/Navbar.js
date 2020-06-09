@@ -12,17 +12,16 @@ function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <Link className="nav-link" to="/home">Home <span class="sr-only">(current)</span></Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Obituary</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Plan Online</a>
+              <Link className="nav-link" to="/planonline">Plan Online</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link"href="#"> <Link to="/about-us">About Us</Link></a>
-             
+              <a className="nav-link" href="#">About Us</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">Burial Service</a>

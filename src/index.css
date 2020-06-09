@@ -5,9 +5,43 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: gainsboro;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h2{
+  text-align: center;
+  padding-top: 5%;
+}
+
+div.container{
+  margin: auto;
+  padding-right: 0%;
+
+}
+div.row{
+  align-items: center;
+}
+h1{
+  text-align: center;
+}
+
+
+  div.col.p{
+    text-align: left;
+  }
+
+  img.d-block{
+    margin: auto;
+  }
+
+
+ div.carousel-caption{
+   text-align: center;
+ }
+
+

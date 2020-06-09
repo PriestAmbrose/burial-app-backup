@@ -1,12 +1,11 @@
 import React, {Component} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
-import PlanOnline from './Plan Online';
-import AboutUs from './About Us';
-import flowers from './flowers.jpg';
+import Home from './pages/Home';
+import Plan from './pages/Plan';
+import NotFoundPage from './pages/NotFoundPage';
 import {Carousel} from 'react-bootstrap';
 
 class App extends Component  {
@@ -14,30 +13,30 @@ class App extends Component  {
     return (
       <div>
       <Router>
-       
+       <div>
       <Navbar/>
       <Switch>
-      <Route path="/" component={Home}/>
-      <Route path="/plan-online" Component={PlanOnline}/>
-      <Route path="/about-us" Component={AboutUs}/>
+      <Route exact path="/" component={Home}/>
+      <Route path="/planonline" component={Plan}/>
+      <Route path="/notfound" component={NotFoundPage}/>
       </Switch>
-     
+     </div>
       </Router>
-
-<Carousel>
+     
+  <Carousel>
 <Carousel.Item>
   <img
     className="d-block w-100"
     src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/living-herbarium-floristry-exhibition-at-rhs-chelsea-flower-show-in-london-tuesday-may-21-2019-1584897366.jpg?crop=0.782xw:0.587xh;0.00321xw,0.0120xh&resize=1200:*"
-    alt="First slide" height="500"/>
+    alt="First slide" height="480"/>
   <Carousel.Caption>
-    <h3>Start Planning</h3>
+  <button className="btn btn-outline-primary" type="button">Start Planning</button>
   </Carousel.Caption>
 </Carousel.Item>
-
 </Carousel>
+      
 </div>
-    );
+     );
 
   }
 
@@ -45,10 +44,5 @@ class App extends Component  {
 }
 
 
-const Home = () => (
-  <div>
-
-  </div>
-)
 
 export default App;
