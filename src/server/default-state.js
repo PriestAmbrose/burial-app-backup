@@ -24,8 +24,11 @@ export const defaultState = {
         deathDate: "May 1th 2020",
         funeralHome: "Otway",
         coronaCase: true,
-        life: "She was sooo nice, too!....etc."
-        
+        life: "She was sooo nice, too!....etc." 
+    },
+    {
+        userId : "U0",
+        name: "George Floyd",
     }],
     funeralArrangements: [{
         userId :"U1",
