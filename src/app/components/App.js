@@ -6,7 +6,7 @@ import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './pages/Home';
 import Plan from './pages/Plan';
 import Obituary from './pages/Obituary';
-// import NotFoundPage from './pages/NotFoundPage';
+import NotFoundPage from './pages/NotFoundPage';
 import {Carousel} from 'react-bootstrap';
 
 class App extends Component  {
@@ -20,7 +20,7 @@ class App extends Component  {
       <Route exact path="/" component={Home}/>
       <Route path="/planonline" component={Plan}/>
       <Route path="/obituary" component={Obituary}/>
-      {/* <Route path="/notfound" component={NotFoundPage}/> */}
+      <Route path="/notfound" component={NotFoundPage}/>
       </Switch>
      </div>
       </Router>
