@@ -1,0 +1,83 @@
+.App {
+  text-align: center;
+}
+
+.nav-item{
+  text-align: center;
+  text-indent: 10px;
+}
+
+.navbar-nav{
+  margin: 0%;
+}
+
+.p{
+  text-align: center;
+}
+div.column{
+  padding-right: 4%;
+}
+
+div.row3{
+  width: 70%;
+  margin: auto;
+}
+
+div.form-group3{
+  width: 40%;
+  margin: auto;
+}
+
+div.form-group4{
+  width: 40%;
+  margin: auto;
+}
+
+div.form-group2{
+  width: 40%;
+  margin: auto;
+}
+div.form-group1{
+  width: 40%;
+  margin: auto;
+}
+
+img.d-block{
+  margin: auto;
+}
+
+
+div.form-group5{
+  width: 30%;
+  margin: auto;
+}
+
+div.form-group6{
+  width: 30%;
+  margin: auto;
+}
+
+div.form-group7{
+  width: 30%;
+  margin: auto;
+}
+div.form-group8{
+  width: 30%;
+  margin-left: 0%
+}
+
+div.form-group9{
+  width: 30%;
+  margin: auto;
+}
+div.form-group10{
+  width: 30%;
+  margin-right: 0%;
+}
+div.btn{
+  margin-left: 50%;
+}
+div.row4{
+  width: 40%;
+  margin-left: 0%
+}

@@ -6,7 +6,7 @@ import createSagaMiddleware from 'redux-saga';
 const sagaMiddleware = createSagaMiddleware();
 import * as sagas from './sagas';
 import * as mutations from './mutations';
-import { TaskList } from '../components/TaskList';
+// import { TaskList } from '../components/TaskList';
 
 export const store = createStore(
     combineReducers({
