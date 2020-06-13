@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import {connectDB} from './connect-db';
-import './initialize-db';
+//import './initialize-db';
 import { authenticationRoute } from './authenticate';
 
 let port = process.env.PORT || 7777;
@@ -40,8 +40,9 @@ usage: storeInDb(col,item)
 export const storeInDb = async (col,item) => {
     let db = await connectDB();
     let collection = db.collection(col);
+    console.info("1inside storeInDb", col,item);
     await collection.insertOne(item);
-    console.info("Inserted item in collection ", col, " : ", item);
+    console.info("2Inserted item in collection ", col, " : ", item);
 }
 
 /* The call of "getFromDb" retrieves from collection "col" all items wich are found 
@@ -80,8 +81,9 @@ export const deleteFromDb = async (col,queryFilter) => {
 
     collection.deleteMany(queryFilter);
 }
-
-export const addNewTask = async task=>{
+// those area function from previous project
+// left them as an example for now
+/*export const addNewTask = async task=>{
     let db = await connectDB();
     let collection = db.collection('tasks');
     await collection.insertOne(task);
@@ -113,4 +115,4 @@ app.post('/task/update', async (req, res) => {
     let task = req.body.task; 
     await updateTask(task);
     res.status(200).send();
-});
+});*/
