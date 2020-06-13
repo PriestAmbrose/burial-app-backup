@@ -29,6 +29,8 @@ export const defaultState = {
     {
         userId : "U0",
         name: "George Floyd",
+        life: "he was sooo nice, too!....etc."
+        
     }],
     funeralArrangements: [{
         userId :"U1",

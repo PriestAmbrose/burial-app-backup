@@ -40,9 +40,8 @@ usage: storeInDb(col,item)
 export const storeInDb = async (col,item) => {
     let db = await connectDB();
     let collection = db.collection(col);
-    console.info("1inside storeInDb", col,item);
     await collection.insertOne(item);
-    console.info("2Inserted item in collection ", col, " : ", item);
+    console.info("Inserted item in collection ", col, " : ", item);
 }
 
 /* The call of "getFromDb" retrieves from collection "col" all items wich are found 
@@ -83,7 +82,9 @@ export const deleteFromDb = async (col,queryFilter) => {
 }
 // those area function from previous project
 // left them as an example for now
-/*export const addNewTask = async task=>{
+/*
+
+export const addNewTask = async task=>{
     let db = await connectDB();
     let collection = db.collection('tasks');
     await collection.insertOne(task);
