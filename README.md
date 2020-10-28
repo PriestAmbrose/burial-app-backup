@@ -5,6 +5,7 @@
 ### Starting application with webpack
 
 `npm install`
+Hello bootcampers-2 !!! it is a good nasty rainy day!!!!!!
 
 `npm run start-dev` starts both server and frontend 
 
